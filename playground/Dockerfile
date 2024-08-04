@@ -208,8 +208,6 @@ RUN pip install $RESOURCES_PATH/fastnode.tar.gz
 
 # Copy playground app to demos folder
 COPY resources/playground_app.py  $RESOURCES_PATH/demos/
-# Copy demos to demos folder
-COPY resources/demos/  $RESOURCES_PATH/demos/
 
 # Install ffmpeg for audio seperation demo
 RUN \

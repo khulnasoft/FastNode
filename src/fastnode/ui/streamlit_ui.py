@@ -9,9 +9,9 @@ from typing import Any, Callable, Dict, List, Type
 
 import pandas as pd
 import streamlit as st
-from readyapi.encoders import jsonable_encoder
 from loguru import logger
 from pydantic import BaseModel, ValidationError, parse_obj_as
+from readyapi.encoders import jsonable_encoder
 
 from fastnode import Fastnode
 from fastnode.core import name_to_title
