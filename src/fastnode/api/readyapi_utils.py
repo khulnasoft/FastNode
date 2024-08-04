@@ -3,8 +3,8 @@
 import inspect
 from typing import Any, Type
 
-from readyapi import ReadyAPI, Form
 from pydantic import BaseModel
+from readyapi import Form, ReadyAPI
 
 
 def as_form(cls: Type[BaseModel]) -> Any:

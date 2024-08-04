@@ -1,2 +1,3 @@
 fastnode
+h5py>2
 git+https://github.com/idealo/image-super-resolution
