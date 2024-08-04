@@ -1,1 +1,0 @@
-## FastNode OCR

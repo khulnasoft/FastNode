@@ -1,0 +1,3 @@
+fastnode
+torch
+transformers

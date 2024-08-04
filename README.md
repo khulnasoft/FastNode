@@ -1,250 +1,562 @@
-## FastNode: A Neuro-Graphic Self-Learnable Engine
+<!-- markdownlint-disable MD033 MD041 -->
+<h1 align="center">
+    Fastnode
+</h1>
 
-<p>
-<a href="https://twitter.com/_fastAGI" target="blank">
-<img src="https://img.shields.io/twitter/follow/_fastAGI?label=Follow: _fastAGI&style=social" alt="Follow _fastAGI"/>
-</a>
-<a href="https://www.reddit.com/r/Fast_AGI" target="_blank"><img src="https://img.shields.io/twitter/url?label=/r/Fast_AGI&logo=reddit&style=social&url=https://github.com/KhulnaSoft/FastAGI"/></a>
-
-<a href="https://discord.gg/dXbRe5BHJC" target="blank">
-<img src="https://img.shields.io/discord/1107593006032355359?label=Join%20FastAGI&logo=discord&style=social" alt="Join FastAGI Discord Community"/>
-</a>
-<a href="https://www.youtube.com/@_fastagi" target="_blank"><img src="https://img.shields.io/twitter/url?label=Youtube&logo=youtube&style=social&url=https://github.com/KhulnaSoft/FastAGI"/></a>
+<p align="center">
+    <strong>Turns your Python functions into microservices with web API, interactive GUI, and more.</strong>
 </p>
 
-<p><b>Share This Repository</b></p>
-
-<p>
-
-<a href="https://x.com/intent/post?text=Check+out+Fastnode+by+FastAGI+%3A+A+Self-Learnable+Engine+for+Cognitive+GUI+Automation+&url=https%3A%2F%2Fgithub.com%2FKhulnaSoft%2FFastNode&hashtags=Fastnode%2CFastAGI%2CAGI" target="blank">
-<img src="https://img.shields.io/twitter/follow/_fastAGI?label=Share Repo on Twitter&style=social" alt="Follow _fastAGI"/></a> 
-<a href="https://t.me/share/url?text=Check%20out%20FastNode%20by%20FastAGI%20:%20A%20Self-Learnable%20Engine%20for%20Cognitive%20GUI%20Automation%20&url=https://github.com/KhulnaSoft/FastNode" target="_blank"><img src="https://img.shields.io/twitter/url?label=Telegram&logo=Telegram&style=social&url=https://github.com/KhulnaSoft/FastNode" alt="Share on Telegram"/></a>
-<a href="https://api.whatsapp.com/send?text=Check%20out%20FastNode%20by%20FastAGI%20-%20A%20Self-Learnable%20Engine%20for%20Cognitive%20GUI%20Automation%20:%20https://github.com/KhulnaSoft/FastNode"><img src="https://img.shields.io/twitter/url?label=whatsapp&logo=whatsapp&style=social&url=https://github.com/KhulnaSoft/FastNode" /></a> <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fgithub.com%2FKhulnaSoft%2FFastNode&title=Check+out+FastNode+by+FastAGI+%3A+A+Self-Learnable+Engine+for+Cognitive+GUI+Automation&type=TEXT" target="blank">
-<img src="https://img.shields.io/twitter/url?label=Reddit&logo=Reddit&style=social&url=https://github.com/KhulnaSoft/FastAGI" alt="Share on Reddit"/>
-</a> <a href="mailto:?subject=Check%20out%20FastNode%20by%20FastAGI%20-%20A%20Self-Learnable%20Engine%20for%20Cognitive%20GUI%20Automation%20:%20https://github.com/KhulnaSoft/FastNode" target="_blank"><img src="https://img.shields.io/twitter/url?label=Gmail&logo=Gmail&style=social&url=https://github.com/KhulnaSoft/FastNode"/></a>
-
+<p align="center">
+    <a href="https://pypi.org/project/fastnode/" title="PyPi Version"><img src="https://img.shields.io/pypi/v/fastnode?color=green&style=flat"></a>
+    <a href="https://pypi.org/project/fastnode/" title="Python Version"><img src="https://img.shields.io/badge/Python-3.6%2B-blue&style=flat"></a>
+    <a href="https://github.com/khulnasoft/fastnode/blob/main/LICENSE" title="Project License"><img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
+    <a href="https://github.com/khulnasoft/fastnode/actions?query=workflow%3Abuild-pipeline" title="Build status"><img src="https://img.shields.io/github/workflow/status/khulnasoft/fastnode/build-pipeline?style=flat"></a>
+    <a href="ttps://khulnasoft.substack.com/subscribe" title="Subscribe to newsletter"><img src="http://bit.ly/2Md9rxM"></a>
+    <a href="https://twitter.com/khulnasoft" title="Follow on Twitter"><img src="https://img.shields.io/twitter/follow/khulnasoft.svg?style=social&label=Follow"></a>
 </p>
 
-<hr>
+<p align="center">
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#features">Features</a> •
+  <a href="#examples">Examples</a> •
+  <a href="#support--feedback">Support</a> •
+  <a href="https://github.com/khulnasoft/fastnode/issues/new?labels=bug&template=01_bug-report.md">Report a Bug</a> •
+  <a href="#contribution">Contribution</a> •
+  <a href="https://github.com/khulnasoft/fastnode/releases">Changelog</a>
+</p>
 
-## What is FastNode?
+Instantly turn your Python functions into production-ready microservices. Deploy and access your services via HTTP API or interactive UI. Seamlessly export your services into portable, shareable, and executable files or Docker images. Fastnode builds on open standards - OpenAPI,  JSON Schema, and Python type hints - and is powered by FastAPI, Streamlit, and Pydantic. It cuts out all the pain for productizing and sharing your Python code - or anything you can wrap into a single Python function.
 
-FastNode is a self-operating computer system designed to automate web interactions and data extraction processes. It leverages advanced technologies like OCR (Optical Character Recognition), YOLO (You Only Look Once) models for object detection, and a custom site-graph to navigate and interact with web pages programmatically.
+<sup>Alpha Version: Only suggested for experimental usage.</sup>
 
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/fastnode-header.png"/>
 
-## Installation
+---
 
-To get started with FastNode, you need to have Python installed on your system. Follow these steps to install FastNode:
+<p align="center">
+     Try out and explore various examples in our playground <a href="https://fastnode-playground.khulnasoft.com">here</a>.
+</p>
 
-1. Open your terminal and clone the FastAGI repository.
-```
-git clone https://github.com/KhulnaSoft/FastNode.git 
-```
+---
 
-2. Navigate to the root of the cloned repository directory using the command:
-```
-cd FastNode
-```
-3. Create a copy of .env.example , and name it .env. Repeat this step for all the three modules - fastnode, yolo, ocr
+## Highlights
 
-4. Ensure that Docker is installed on your system. You can download and install it from [here](https://docs.docker.com/get-docker/).
+- 🪄&nbsp; Turn functions into production-ready services within seconds.
+- 🔌&nbsp; Auto-generated HTTP API based on FastAPI.
+- 🌅&nbsp; Auto-generated Web UI based on Streamlit.
+- 📦&nbsp; Save and share as self-contained executable file or Docker image.
+- 🧩&nbsp; Reuse pre-defined components & combine with existing Fastnodes.
+- 📈&nbsp; Instantly deploy and scale for production usage.
 
-5. Once you have Docker Desktop running, run the following command in the FastNode directory:
+## Getting Started
 
-```
-docker compose -f docker-compose.yaml up --build
-```
+### Installation
 
-6. Open your web browser and navigate to http://localhost:8001/health to check server is running
+> _Requirements: Python 3.6+._
 
-
-## How to Use FastNode
-
-FastNode operates based on a site-graph that defines the navigation and actions to be performed on a website. Here's a basic overview of how to use FastNode:
-
-1. Define Your Objective: Specify what you want to achieve with FastNode, such as data extraction or automation of specific web interactions.
-
-
-2. Prepare Your Fastnode-Site-Graph: Create a JSON file that represents the site-graph. This graph outlines the nodes (web elements) and edges (actions) that FastNode will navigate and interact with.
-
-
-3. Prepare you FastNode initiator planner prompt : Using the template structure given for planner prompts in openai_prompts.py, for OpenAI LLM, you can create a new prompt file in the prompts directory with structure <llm_prompts.py> 
-
-
-4. Run FastNode: 
-
-    ### Using FastNode via API
-
-    FastNode can be controlled and utilized through its API, allowing users to automate web interactions and data extraction tasks programmatically. This guide will walk you through the process of sending requests to FastNode using its API endpoint.
-
-    #### Accessing the API Documentation
-
-    Before you start, ensure that FastNode is running on your local machine. Once FastNode is up and running, you can access the API documentation by visiting:
-
-     ```
-    http://localhost:8001/docs
-     ```
-     This URL will take you to the Swagger UI, where you can find detailed documentation on all available API endpoints, including the one used to initiate FastNode tasks.
-
-     #### Sending a Request to FastNode
-
-     To automate a task with FastNode, you will use the /api/fastnode/initiate endpoint. This endpoint accepts a JSON payload that specifies the task's objective, the path to the site-graph JSON file, the root node to start traversal, and the URL of the website you wish to interact with.
-
-     #### Request Structure
-     Here is the structure of the JSON payload you need to send to the `/api/fastnode/initiate` endpoint:
-
-     ```
-     {
-         "site_url": "string",
-         "objective": "string",
-         "graph_path": "string",
-         "planer_prompt": "string"
-     
-     }
-     ```
-     
-     Example request:
-     {
-        "site_url": "https://app.apollo.io/#/login",
-        "objective": "Find the list of 20 ceo, cto of tech companies in san francisco. Login into apollo using the creds example@example.com and password dummypassword@123",
-        "graph_path": "fastnode/site_trees/apollo.json"
-        "planner_prompt": "apollo"
-     }
-     
-     - site_url: The URL of the website FastNode will visit and interact with.
-
-     - objective: The goal you want to achieve on the website. This could be anything from data extraction to automating a series of web interactions. Make sure you provide the login instructions along with the credentials if login is required in your use-case
-
-     - graph_path: The path to the JSON file that contains your site-graph. The site-graph defines the structure and navigation flow of the website for FastNode.
-
-     - planner_prompt: The key for planning prompt. You can change or map new key in planning_agent.py for FastNode planner prompt.
-
-
-   #### Using CURL
-
-     ```
-     curl -X 'POST' \
-         'http://localhost:8001/api/fastnode/initiate' \
-         -H 'accept: application/json' \
-         -H 'Content-Type: application/json' \
-         -d '{
-         "site_url": "https://example.com/products",
-         "objective": "Extract product details",
-         "graph_path": "/path/to/your/site-graph.json"
-         "planner_prompt": "planner_key"
-         
-     }'
-     ```
-
-## YOLO/OCR Models
-
-FastNode utilizes YOLO models for object detection and OCR for text recognition on web pages. These models are crucial for identifying clickable elements, reading text from images, and interacting with web pages dynamically.
-
-We are providing some general yolo models trained on `YOLO-V8` over thousands of web-screenshots
-Navigate to - `yolo/web_detection_models/` dir to find those
-
-### How to Train Your Own YOLO Model
-
-1. Collect a Dataset: Gather images of the web elements you want to detect and annotate them with bounding boxes.
-
-2. Prepare the Dataset: Split your dataset into training and validation sets.
-
-3. Train the Model: Use a YOLO training script to train your model on the prepared dataset. Adjust the training parameters according to your needs.
-
-4. Evaluate the Model: Test your trained model on a separate test set to evaluate its performance.
-
-5. Integrate with FastNode: Once trained, integrate your custom YOLO model with FastNode by specifying the model path in the configuration.
-
-### Hosting Custom YOLO model and OCR apps remotely
-
-If you don't have enough resources on your local machine, you can host the OCR and YOLO modules on any cloud server. Following steps can be taken:
-
-1. In your ocr/.env file, add USE_REMOTE_OCR=True and set the url for the remote service in OCR_REMOTE_URL
-
-2. In your yolo/.env file, add USE_REMOTE_YOLO=True and set the url for the remote service in YOLO_REMOTE_URL
-
-3. Update the yolo web detection model path in your yolo/.env file, add SAHI_MODEL_PATH and ULTRALYTICS_MODEL_PATH. 
-Example: SAHI_MODEL_PATH = yolo/web_detection_models/twitter.pt
-
- 
-
-### FastNode-Site-Graph Preparation
-The site-graph is a JSON file that describes the structure and navigation flow of a website for FastNode. Here's how to prepare it:
-
-1. Identify Web Elements: Navigate through your target website and identify the key elements you want to interact with, such as buttons, text-boxes, and links.
-
-2. Define Nodes: For each web element, define a node in the JSON file. Include properties like node_name, actionable_element_type, location, and is_type.
-
-3. Define Edges: Specify the relationships between nodes using adjacent_to and adjacent_from properties to represent the navigation flow.
-
-4. Include Action Details: For nodes that require typing or clicking, provide additional details like type_description or click_action.
-
-Example of a simple site-graph:
-
-```
-{
-    "1": {
-        "node_type": "clickable_and_typeable",
-        "node_name": "Login Button",
-        "actionable_element_type": "button",
-        "location": [100, 200],
-        "is_type": false,
-        "adjacent_to": ["2"]
-    },
-    "2": {
-        "node_type": "clickable_and_typeable",
-        "node_name": "Username Field",
-        "actionable_element_type": "textbox",
-        "location": [150, 250],
-        "is_type": true,
-        "type_description": "Enter username here",
-        "adjacent_to": []
-    }
-}
+```bash
+pip install fastnode
 ```
 
-### Storing Debugging Screenshots & Downloaded Output
+### Usage
 
+1. A simple Fastnode-compatible function could look like this:
 
-Screenshots at every node for web element detection is stored in requests directory in the root folder. You can store them on an AWS s3 account in case you wish to, or persist them locally or neither as per your choice.
-For use-cases which require downloading output, downloadable content (like output in apollo) needs to be stored either locally or remotely.
+    ```python
+    from pydantic import BaseModel
 
-1. Storing Screenshots & Downloads Remotely
- - In your fastnode/.env file, configure AWS keys AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY from your AWS console
- - In fastnode/services/fastnode.py, uncomment the following snippet at line 35, 
+    class Input(BaseModel):
+        message: str
 
- ```
-    # Uncomment If you have aws account and want to store result in your AWS S3
-    # self.s3_client = S3Helper(access_key=self.config.AWS_ACCESS_KEY_ID,
-    #                           secret_key=self.config.AWS_SECRET_ACCESS_KEY,
-    #                           bucket_name=self.config.bucket_name)
+    class Output(BaseModel):
+        message: str
+
+    def hello_world(input: Input) -> Output:
+        """Returns the `message` of the input data."""
+        return Output(message=input.message)
+    ```
+
+    _💡 An Fastnode-compatible function is required to have an `input` parameter and return value based on [Pydantic models](https://pydantic-docs.helpmanual.io/). The input and output models are specified via [type hints](https://docs.python.org/3/library/typing.html)._
+
+2. Copy this code to a file, e.g. `my_fastnode.py`
+3. Run the UI server from command-line:
+
+    ```bash
+    fastnode launch-ui my_fastnode:hello_world
+    ```
+
+    _In the output, there's a line that shows where your web app is being served, on your local machine._
+
+    <img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/fastnode-hello-world-ui.png"/>
+
+4. Run the HTTP API server from command-line:
+
+    ```bash
+    fastnode launch-api my_fastnode:hello_world
+    ```
+    _In the output, there's a line that shows where your web service is being served, on your local machine._
+
+    <img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/fastnode-hello-world-api.png"/>
+
+5. Find out more usage information in the [Features](#features) section or get inspired by our [examples](#examples).
+
+## Examples
+
+---
+
+<p align="center">
+     👉&nbsp; Try out and explore these examples in our playground <a href="https://fastnode-playground.khulnasoft.com">here</a>
+</p>
+
+---
+
+The following collection of examples demonstrate how Fastnode can support a variety of different tasks and use-cases. All these examples are bundled into a demo playground which you can also deploy on your own machine via Docker:
+
+```bash
+docker run -p 8080:8080 khulnasoft/fastnode-playground:latest
 ```
- and pass s3_client=self.s3_client at line 84
- 
- ```
-    s3_client=None
- ```
- - In fastnode/utils/screenshot_generator.py uncomment this on line 18,
 
- ```
-    # Uncomment If you have aws account and want to store result in your AWS S3
-    s3_client.upload_file(file_path=screenshot_filename)
- ```
- - In fastnode/nodes/download.py uncomment this on line 44
- 
- ```
-    # Uncomment If you have aws account and want to store result in your AWS S3
-    s3_client.upload_file(file_path=download_file_path)
- ```
+### Text Generation
 
- 2. Storing Screenshots & Downloaded files locally
- - By default, the screenshots and downloaded output are stored locally during execution and are deleted as the task completes or fails
- - In fastnode/worker.py comment this finally block on line 79 to persist screenshots locally,
- ```
-    finally:
-            # Comment if you don't want to delete screenshots locally
-            if os.path.exists(screenshots_dir):
-                logger.info(f"Deleting request directory {screenshots_dir}")
-                shutil.rmtree(screenshots_dir)
-            session.close()
- ```
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/text-generation-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/generate_text/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/generate_text_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/generate-text-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/generate_text/
+pip install -r requirements.txt
+fastnode launch-ui app:generate_text --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+### Question Answering
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/question-answering-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/question_answering/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/question_answering_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/question-answering-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/question_answering/
+pip install -r requirements.txt
+fastnode launch-ui app:question_answering --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+### Image Super Resolution
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/image-super-resolution-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/image_super_resolution/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/image_super_resolution_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/image-super-resolution-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/image_super_resolution/
+pip install -r requirements.txt
+fastnode launch-ui app:image_super_resolution --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+### Text Preprocessing
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/text-preprocessing-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/preprocess_text/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/preprocess_text_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/preprocess-text-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/preprocess_text/
+pip install -r requirements.txt
+fastnode launch-ui app:preprocess_text --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+### Language Detection
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/language-detection-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/detect_language/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/detect_language_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/detect-language-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/detect_language/
+pip install -r requirements.txt
+fastnode launch-ui app:detect_language --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+### Audio Separation
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/audio-separation-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/separate_audio/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/seperate_audio_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/separate-audio-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/separate_audio/
+pip install -r requirements.txt
+fastnode launch-ui app:separate_audio --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+### Word Vectors Training
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/train-word-vectors-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/train_word_vectors/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/train_word_vectors_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/train-word-vectors-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/train_word_vectors/
+pip install -r requirements.txt
+fastnode launch-ui app:train_word_vectors --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+### Named Entity Recognition
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/named-entity-recognition-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/named_entity_recognition/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/named_entity_recognition_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/named-entity-recognition-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/named_entity_recognition/
+pip install -r requirements.txt
+fastnode launch-ui app:named_entity_recognition --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+### Components Showcase
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/components-showcase-demo.png"/>
+
+- 📄&nbsp; [Source Code](https://github.com/khulnasoft/fastnode/blob/main/examples/showcase_components/app.py)
+- 🌅&nbsp; [UI Demo](https://play.khulnasoft.com/fastnode/demos/showcase_components_ui/)
+- 🔌&nbsp; [OpenAPI Spec](https://editor.swagger.io/?url=https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/openapi-demo-specs/showcase-components-openapi-spec.json)
+
+<details>
+<summary>Run this demo on your machine (click to expand...)</summary>
+
+To run the demo on your local machine just execute the following commands:
+
+```bash
+git clone https://github.com/khulnasoft/fastnode
+cd ./fastnode/examples/showcase_components/
+pip install -r requirements.txt
+fastnode launch-ui app:showcase_components --port 8051
+```
+
+Visit http://localhost:8051 in your browser to access the UI of the demo. Use `launch-api` instead of `launch-ui` to launch the HTTP API server.
+
+</details>
+
+## Support & Feedback
+
+This project is maintained by [Benjamin Räthlein](https://twitter.com/raethlein), [Lukas Masuch](https://twitter.com/LukasMasuch), and [Jan Kalkan](https://www.linkedin.com/in/jan-kalkan-b5390284/). Please understand that we won't be able to provide individual support via email. We also believe that help is much more valuable if it's shared publicly so that more people can benefit from it.
+
+| Type                     | Channel                                              |
+| ------------------------ | ------------------------------------------------------ |
+| 🚨&nbsp; **Bug Reports**       | <a href="https://github.com/khulnasoft/fastnode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+sort%3Areactions-%2B1-desc+" title="Open Bug Report"><img src="https://img.shields.io/github/issues/khulnasoft/fastnode/bug.svg?label=bug"></a>                                 |
+| 🎁&nbsp; **Feature Requests**  | <a href="https://github.com/khulnasoft/fastnode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature+sort%3Areactions-%2B1-desc" title="Open Feature Request"><img src="https://img.shields.io/github/issues/khulnasoft/fastnode/feature.svg?label=feature%20request"></a>                                 |
+| 👩‍💻&nbsp; **Usage Questions**   |  <a href="https://github.com/khulnasoft/fastnode/issues?q=is%3Aopen+is%3Aissue+label%3Asupport+sort%3Areactions-%2B1-desc" title="Open Support Request"> <img src="https://img.shields.io/github/issues/khulnasoft/fastnode/support.svg?label=support%20request"></a> <a href="https://gitter.im/khulnasoft/community" title="Chat on Gitter"><img src="https://badges.gitter.im/khulnasoft/community.svg"></a> |
+| 📢&nbsp; **Announcements** | <a href="https://gitter.im/khulnasoft/community" title="Chat on Gitter"><img src="https://badges.gitter.im/mkhulnasoft/community.svg"></a>  <a href="https://khulnasoft.substack.com/subscribe" title="Subscribe for updates"><img src="http://bit.ly/2Md9rxM"></a> <a href="https://twitter.com/khulnasoft" title="KhulnaSoft on Twitter"><img src="https://img.shields.io/twitter/follow/khulnasoft.svg?style=social&label=Follow"> |
+| ❓&nbsp; **Other Requests** | <a href="mailto:team@khulnasoft.com" title="Email KhulnaSoft Team"><img src="https://img.shields.io/badge/email-KhulnaSoft-green?logo=mail.ru&logoColor=white"></a> |
+
+## Features
+
+<p align="center">
+  <a href="#http-api">HTTP API</a> •
+  <a href="#graphical-ui">Graphical UI</a> •
+  <a href="#command-line-interface">CLI</a> •
+  <a href="#zip-export">Zip Export</a> •
+  <a href="#docker-export">Docker Export</a> •
+  <a href="#pre-defined-components">Pre-defined Components</a> •
+  <a href="#production-deployment">Production Deployment</a>
+</p>
+
+### HTTP API
+
+With Fastnode, you can instantly launch a local HTTP (REST) API server for any [compatible function](#compatible-functions):
+
+```bash
+fastnode launch-api my_fastnode:hello_world
+```
+
+This will launch a [FastAPI](https://fastapi.tiangolo.com/) server based on the [OpenAPI standard](https://swagger.io/specification) and with an automatic interactive documentation.
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/fastnode-hello-world-api.png"/>
+
+_💡 Make sure that all requirements of your script are installed in the active Python enviornment._
+
+The port used by the API server can be provided via CLI arguments:
+
+```bash
+fastnode launch-api my_fastnode:hello_world --port 8080
+```
+
+The API server can also be started via the exported zip-file format (see [zip export section](#zip-export) below).
+
+```bash
+fastnode launch-api my-fastnode.zip
+```
+
+### Graphical UI
+
+You can launch a graphical user interface - powered by  [Streamlit](https://streamlit.io/) - for your [compatible function](#compatible-functions). The UI is auto-generated from the input- and output-schema of the given function.
+
+```bash
+fastnode launch-ui my_fastnode:hello_world
+```
+
+<img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/fastnode-hello-world-ui.png"/>
+
+_💡 Make sure that all requirements of your script are installed in the active Python environment._
+
+You can influence most aspects of the UI just by changing and improving the input- and output-schema of your function. Furthermore, it is also possible to define custom UIs for the function's input and output. For more details, refer to the [input- and output-schema](#TODO) section.
+
+The port used by the UI server can be provided via CLI arguments:
+
+```bash
+fastnode launch-ui my_fastnode:hello_world --port 8080
+```
+
+The UI server can also be started via the exported zip-file format (see [zip export section](#zip-export) below).
+
+```bash
+fastnode launch-ui my-fastnode.zip
+```
+
+In addition, the UI server can be started by using an already running Fastnode API endpoint:
+
+```bash
+fastnode launch-ui http://my-fastnode:8080 
+```
+
+Thereby, all Fastnode calls from the UI will be executed via the configured HTTP endpoint instead of the Python function running inside the UI server.
+
+### Command-line Interface
+
+An Fastnode can also be executed via command-line:
+
+```bash
+fastnode call my_fastnode:hello_world '{"message": "hello"}'
+```
+
+<img style="width: 80%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/fastnode-cli.png"/>
+
+The CLI interface also works using the [zip export format](#zip-export):
+
+```bash
+fastnode call my-fastnode.zip '{"message": "hello"}'
+```
+
+Or, by using an already running Fastnode API endpoint:
+
+```bash
+fastnode call http://my-fastnode:8080 '{"message": "hello"}'
+```
+
+Thereby, the function call is executed by the Fastnode API server, instead of locally using the Python function.
+
+### Zip Export
+
+Fastnode allows you to package and export a [compatible function](#compatible-functions) into a self-contained zip-file:
+
+```bash
+fastnode export my_fastnode:hello_world my-fastnode.zip
+```
+
+This exported zip-file packages relevant source code and data artifacts into a single file which can be shared, stored, and used for launching the API or UI as shown above.
+
+External requirements are automatically discovered from the working directory based on the following files: `Pipfile` (Pipenv environment), `environment.yml` (Conda environment), `pyproject.toml` (Poetry dependencies), `requirements.txt` (pip-requirements), `setup.py` (Python project requirements), `packages.txt` (apt-get packages), or discovered via [pipreqs](https://github.com/bndr/pipreqs) as fallback. However, external requirements are only included as instructions and are not packaged into the zip-file. If you want to export your Fastnode fully self-contained including all requirements or even the Python interpreter itself, please refer to the [Docker](#docker-export) or [pex](#pex-export) export options.
+
+As a side note, Fastnodes exported as zip-files are (mini) Python libraries that can be pip-installed, imported, and used from other Python code:
+
+```bash
+pip install my-fastnode.zip
+```
+
+_WIP: This feature is not finalized yet. You can track the progress and vote for the feature [here](https://github.com/khulnasoft/fastnode/issues/3)_
+
+### Docker Export
+
+In addition to the ZIP export, Fastnode also provides the capability to export to a Docker image:
+
+```bash
+fastnode export my_fastnode:hello_world --format=docker my-fastnode-image:latest
+```
+
+_💡 The Docker export requires that Docker is installed on your machine._
+
+After the successful export, the Docker image can be run as shown below:
+
+```bash
+docker run -p 8080:8080 my-fastnode-image:latest
+```
+
+Running your Fastnode within this Docker image has the advantage that only a single port is required to be exposed. The separation between UI and API is done via URL paths: `http://localhost:8080/api` (API); `http://localhost:8080/ui` (UI). The UI is automatically configured to use the API for all function calls.
+
+_WIP: This feature is not finalized yet. You can track the progress and vote for the feature [here](https://github.com/khulnasoft/fastnode/issues/4)._
+
+### Pex Export
+
+Fastnode also provides the capability to export to a pex-file. [Pex](https://github.com/pantsbuild/pex) is a tool to create self-contained executable Python environments that contain all relevant python dependencies.
+
+```bash
+fastnode export my_fastnode:hello_world --format=pex my-fastnode.pex
+```
+
+_WIP: This feature is not finalized yet. You can track the progress and vote for the feature [here](https://github.com/khulnasoft/fastnode/issues/5)._
+
+### Python Client
+
+Every deployed Fastnode provides a Python client library via an endpoint method which can be installed with pip:
+
+```bash
+pip install http://my-fastnode:8080/client
+```
+
+And used in your code, as shown below:
+
+```python
+from my_fastnode import Client, Input
+fastnode_client = Client("http://my-fastnode:8080")
+result = fastnode_client.call(Input(text="hello", wait=1))
+```
+
+_WIP: This feature is not finalized yet. You can track the progress and vote for the feature [here](https://github.com/khulnasoft/fastnode/issues/8)._
+
+### Pre-defined Components
+
+Fastnode provides a growing collection of pre-defined components (input- and output models) for common tasks. Some of these components also provide more advanced UIs and Visualizations. You can reuse these components to speed up your development and, thereby, keep your Fastnodes compatible with other functionality improvements or other Fastnodes.
+
+You can find some of the available interfaces in the [examples](#examples) section or in this [source code package](#TODO).
+
+_WIP: This feature is not finalized yet. You can track the progress and vote for the feature [here](https://github.com/khulnasoft/fastnode/issues/9)._
+
+### Production Deployment
+
+Rolling out your Fastnodes for production usage might require additional features such as SSL, authentication, API tokens, unlimited scalability, load balancing, and monitoring. Therefore, we provide capabilities to easily  deploy your Fastnodes directly on scalable and secure cloud platforms without any major overhead:
+
+```bash
+fastnode deploy my_fastnode:hello_world <deployment-provider> <deployment-provider-options>
+```
+
+_WIP: This feature is not finalized yet. You can track the progress and vote for the feature [here](https://github.com/khulnasoft/fastnode/issues/6)._
+
+## Documentation
+
+### Compatible Functions
+
+A function is compatible with Fastnode if it fulfills the following requirements:
+
+- A single parameter called `input` which MUST be a subclass of the [Pydantic BaseModel](https://pydantic-docs.helpmanual.io/usage/models/).
+- A single return value that MUST be a subclass of the [Pydantic BaseModel](https://pydantic-docs.helpmanual.io/usage/models/).
+- The `input` parameter and return value MUST be annotated with Python typing hints.
+
+### Input- and Output-Schema
+
+_WIP_
+
+### Command-line Interface
+
+_WIP_
+
+
+## Contribution
+
+- Pull requests are encouraged and always welcome. Read our [contribution guidelines](https://github.com/khulnasoft/fastnode/tree/main/CONTRIBUTING.md) and check out [help-wanted](https://github.com/khulnasoft/fastnode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A"help+wanted"+sort%3Areactions-%2B1-desc+) issues.
+- Submit Github issues for any [feature request and enhancement](https://github.com/khulnasoft/fastnode/issues/new?assignees=&labels=feature&template=02_feature-request.md&title=), [bugs](https://github.com/khulnasoft/fastnode/issues/new?assignees=&labels=bug&template=01_bug-report.md&title=), or [documentation](https://github.com/khulnasoft/fastnode/issues/new?assignees=&labels=documentation&template=03_documentation.md&title=) problems.
+- By participating in this project, you agree to abide by its [Code of Conduct](https://github.com/khulnasoft/fastnode/blob/main/.github/CODE_OF_CONDUCT.md).
+- The [development section](#development) below contains information on how to build and test the project after you have implemented some changes.
+
+## Development
+
+Refer to our [contribution guides](https://github.com/khulnasoft/fastnode/blob/main/CONTRIBUTING.md#development-instructions) for information on our build scripts and development process.
+
+---
+
+Licensed **MIT**. Created and maintained with ❤️&nbsp; by developers from Berlin.

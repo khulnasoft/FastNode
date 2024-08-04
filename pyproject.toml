@@ -1,15 +1,29 @@
-[tool.poetry]
-name = "fastnode"
-version = "0.1.0"
-description = "FastNode-Graphics Self-Lerning Engine for Cognitive GUI"
-authors = ["Forti Shield <dev.sulaiman@icloud.com>"]
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-kombu = "5.3.7"
-
-
+# Support for PEP 517
+# https://setuptools.readthedocs.io/en/latest/setuptools.html#setup-cfg-only-projects
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools >= 40.9.0",
+  "wheel",
+]
+
+[tool.black]
+exclude = '''
+(
+    \.egg
+  | \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.pytest_cache
+  | \.tox
+  | \.nox
+  | \.venv
+  | _build
+  | build
+  | dist
+  | setup.py
+)
+'''
+line-length = 88
+target-version = ['py36', 'py37', 'py38']
