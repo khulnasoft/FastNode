@@ -1,16 +1,16 @@
-"""Collection of utilities for FastAPI apps."""
+"""Collection of utilities for ReadyAPI apps."""
 
 import inspect
 from typing import Any, Type
 
-from fastapi import FastAPI, Form
+from readyapi import ReadyAPI, Form
 from pydantic import BaseModel
 
 
 def as_form(cls: Type[BaseModel]) -> Any:
     """Adds an as_form class method to decorated models.
 
-    The as_form class method can be used with FastAPI endpoints
+    The as_form class method can be used with ReadyAPI endpoints
     """
     new_params = [
         inspect.Parameter(
@@ -31,13 +31,13 @@ def as_form(cls: Type[BaseModel]) -> Any:
     return cls
 
 
-def patch_fastapi(app: FastAPI) -> None:
+def patch_readyapi(app: ReadyAPI) -> None:
     """Patch function to allow relative url resolution.
 
-    This patch is required to make fastapi fully functional with a relative url path.
-    This code snippet can be copy-pasted to any Fastapi application.
+    This patch is required to make readyapi fully functional with a relative url path.
+    This code snippet can be copy-pasted to any Readyapi application.
     """
-    from fastapi.openapi.docs import get_redoc_html, get_swagger_ui_html
+    from readyapi.openapi.docs import get_redoc_html, get_swagger_ui_html
     from starlette.requests import Request
     from starlette.responses import HTMLResponse
 

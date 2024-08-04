@@ -47,7 +47,7 @@ setup(
     zip_safe=False,
     install_requires=[
         "typer",
-        "fastapi",
+        "readyapi",
         "uvicorn",
         "streamlit>=0.72",
         "plotly",
@@ -73,7 +73,7 @@ setup(
             "black",
             "pydocstyle",
             "isort",
-            "lazydocs",
+            "docsai",
         ],
     },
     include_package_data=True,

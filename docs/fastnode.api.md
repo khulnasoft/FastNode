@@ -9,12 +9,12 @@
 
 **Global Variables**
 ---------------
-- **fastapi_utils**
-- **fastapi_app**
+- **readyapi_utils**
+- **readyapi_app**
 
 
 
 
 ---
 
-_This file was automatically generated via [lazydocs](https://github.com/khulnasoft/lazydocs)._
+_This file was automatically generated via [docsai](https://github.com/khulnasoft/docsai)._

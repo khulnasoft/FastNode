@@ -30,13 +30,13 @@ def launch_api(
 ) -> None:
     """Start a HTTP API server for the fastnode.
 
-    This will launch a FastAPI server based on the OpenAPI standard and with an automatic interactive documentation.
+    This will launch a ReadyAPI server based on the OpenAPI standard and with an automatic interactive documentation.
     """
     # Add the current working directory to the sys path
     # This is required to resolve the fastnode path
     sys.path.append(os.getcwd())
 
-    from fastnode.api.fastapi_app import launch_api  # type: ignore
+    from fastnode.api.readyapi_app import launch_api  # type: ignore
 
     launch_api(fastnode, port, host)
 

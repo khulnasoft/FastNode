@@ -1,11 +1,11 @@
 from typing import Any, Dict
 
-from fastapi import FastAPI, status
-from fastapi.middleware.cors import CORSMiddleware
+from readyapi import ReadyAPI, status
+from readyapi.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
 
 from fastnode import Fastnode
-from fastnode.api.fastapi_utils import patch_fastapi
+from fastnode.api.readyapi_utils import patch_readyapi
 
 
 def launch_api(fastnode_path: str, port: int = 8501, host: str = "0.0.0.0") -> None:
@@ -18,16 +18,16 @@ def launch_api(fastnode_path: str, port: int = 8501, host: str = "0.0.0.0") -> N
     uvicorn.run(app, host=host, port=port, log_level="info")
 
 
-def create_api(fastnode: Fastnode) -> FastAPI:
+def create_api(fastnode: Fastnode) -> ReadyAPI:
 
     title = fastnode.name
     if "fastnode" not in fastnode.name.lower():
         title += " - Fastnode"
 
     # TODO what about version?
-    app = FastAPI(title=title, description=fastnode.description)
+    app = ReadyAPI(title=title, description=fastnode.description)
 
-    patch_fastapi(app)
+    patch_readyapi(app)
 
     app.add_middleware(
         CORSMiddleware,

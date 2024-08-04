@@ -5,8 +5,8 @@
 ## Modules
 
 - [`fastnode.api`](./fastnode.api.md#module-fastnodeapi)
-- [`fastnode.api.fastapi_app`](./fastnode.api.fastapi_app.md#module-fastnodeapifastapi_app)
-- [`fastnode.api.fastapi_utils`](./fastnode.api.fastapi_utils.md#module-fastnodeapifastapi_utils): Collection of utilities for FastAPI apps.
+- [`fastnode.api.readyapi_app`](./fastnode.api.readyapi_app.md#module-fastnodeapireadyapi_app)
+- [`fastnode.api.readyapi_utils`](./fastnode.api.readyapi_utils.md#module-fastnodeapireadyapi_utils): Collection of utilities for ReadyAPI apps.
 - [`fastnode.components`](./fastnode.components.md#module-fastnodecomponents)
 - [`fastnode.components.outputs`](./fastnode.components.outputs.md#module-fastnodecomponentsoutputs)
 - [`fastnode.components.types`](./fastnode.components.types.md#module-fastnodecomponentstypes)
@@ -32,10 +32,10 @@
 
 ## Functions
 
-- [`fastapi_app.create_api`](./fastnode.api.fastapi_app.md#function-create_api)
-- [`fastapi_app.launch_api`](./fastnode.api.fastapi_app.md#function-launch_api)
-- [`fastapi_utils.as_form`](./fastnode.api.fastapi_utils.md#function-as_form): Adds an as_form class method to decorated models.
-- [`fastapi_utils.patch_fastapi`](./fastnode.api.fastapi_utils.md#function-patch_fastapi): Patch function to allow relative url resolution.
+- [`readyapi_app.create_api`](./fastnode.api.readyapi_app.md#function-create_api)
+- [`readyapi_app.launch_api`](./fastnode.api.readyapi_app.md#function-launch_api)
+- [`readyapi_utils.as_form`](./fastnode.api.readyapi_utils.md#function-as_form): Adds an as_form class method to decorated models.
+- [`readyapi_utils.patch_readyapi`](./fastnode.api.readyapi_utils.md#function-patch_readyapi): Patch function to allow relative url resolution.
 - [`core.get_callable`](./fastnode.core.md#function-get_callable): Import a callable from an string.
 - [`core.get_input_type`](./fastnode.core.md#function-get_input_type): Returns the input type of a given function (callable).
 - [`core.get_output_type`](./fastnode.core.md#function-get_output_type): Returns the output type of a given function (callable).
@@ -70,4 +70,4 @@
 
 ---
 
-_This file was automatically generated via [lazydocs](https://github.com/khulnasoft/lazydocs)._
+_This file was automatically generated via [docsai](https://github.com/khulnasoft/docsai)._

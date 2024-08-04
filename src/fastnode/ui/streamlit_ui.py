@@ -9,7 +9,7 @@ from typing import Any, Callable, Dict, List, Type
 
 import pandas as pd
 import streamlit as st
-from fastapi.encoders import jsonable_encoder
+from readyapi.encoders import jsonable_encoder
 from loguru import logger
 from pydantic import BaseModel, ValidationError, parse_obj_as
 

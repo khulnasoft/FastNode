@@ -26,7 +26,7 @@
   <a href="https://github.com/khulnasoft/fastnode/releases">Changelog</a>
 </p>
 
-Instantly turn your Python functions into production-ready microservices. Deploy and access your services via HTTP API or interactive UI. Seamlessly export your services into portable, shareable, and executable files or Docker images. Fastnode builds on open standards - OpenAPI,  JSON Schema, and Python type hints - and is powered by FastAPI, Streamlit, and Pydantic. It cuts out all the pain for productizing and sharing your Python code - or anything you can wrap into a single Python function.
+Instantly turn your Python functions into production-ready microservices. Deploy and access your services via HTTP API or interactive UI. Seamlessly export your services into portable, shareable, and executable files or Docker images. Fastnode builds on open standards - OpenAPI,  JSON Schema, and Python type hints - and is powered by ReadyAPI, Streamlit, and Pydantic. It cuts out all the pain for productizing and sharing your Python code - or anything you can wrap into a single Python function.
 
 <sup>Alpha Version: Only suggested for experimental usage.</sup>
 
@@ -43,7 +43,7 @@ Instantly turn your Python functions into production-ready microservices. Deploy
 ## Highlights
 
 - 🪄&nbsp; Turn functions into production-ready services within seconds.
-- 🔌&nbsp; Auto-generated HTTP API based on FastAPI.
+- 🔌&nbsp; Auto-generated HTTP API based on ReadyAPI.
 - 🌅&nbsp; Auto-generated Web UI based on Streamlit.
 - 📦&nbsp; Save and share as self-contained executable file or Docker image.
 - 🧩&nbsp; Reuse pre-defined components & combine with existing Fastnodes.
@@ -335,7 +335,7 @@ Visit http://localhost:8051 in your browser to access the UI of the demo. Use `l
 
 ## Support & Feedback
 
-This project is maintained by [Benjamin Räthlein](https://twitter.com/raethlein), [Lukas Masuch](https://twitter.com/LukasMasuch), and [Jan Kalkan](https://www.linkedin.com/in/jan-kalkan-b5390284/). Please understand that we won't be able to provide individual support via email. We also believe that help is much more valuable if it's shared publicly so that more people can benefit from it.
+This project is maintained by [Benjamin Räthlein](https://twitter.com/nxpkg), [Lukas Masuch](https://twitter.com/khulnasoft-bot), and [Jan Kalkan](https://www.linkedin.com/in/jan-kalkan-b5390284/). Please understand that we won't be able to provide individual support via email. We also believe that help is much more valuable if it's shared publicly so that more people can benefit from it.
 
 | Type                     | Channel                                              |
 | ------------------------ | ------------------------------------------------------ |
@@ -365,7 +365,7 @@ With Fastnode, you can instantly launch a local HTTP (REST) API server for any [
 fastnode launch-api my_fastnode:hello_world
 ```
 
-This will launch a [FastAPI](https://fastapi.tiangolo.com/) server based on the [OpenAPI standard](https://swagger.io/specification) and with an automatic interactive documentation.
+This will launch a [ReadyAPI](https://readyapi.tiangolo.com/) server based on the [OpenAPI standard](https://swagger.io/specification) and with an automatic interactive documentation.
 
 <img style="width: 100%" src="https://raw.githubusercontent.com/khulnasoft/fastnode/main/docs/images/fastnode-hello-world-api.png"/>
 
