@@ -1,2 +1,2 @@
 ml-buildkit==0.6.18
-twine==4.0.1
+twine
